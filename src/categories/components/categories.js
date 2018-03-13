@@ -14,8 +14,8 @@ function Categories (props){
             categories.map((item)=>{
                 return <Category 
                         {...item}
-                        
                         key={item.id}
+                        handleOpenModal={props.handleOpenModal}
                         />
                 }) 
             }
