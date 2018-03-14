@@ -3,6 +3,8 @@ import React from 'react';
 import Category from './category'
 import './categories.css'
 
+import Search from '../../widgets/containers/search';
+
 
 function Categories (props){
     // console.log("CATE",props.categories);
@@ -10,6 +12,7 @@ function Categories (props){
     
     return (
         <div className="Categories">
+            <Search/>
             {
             categories.map((item)=>{
                 return <Category 
